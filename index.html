@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto's Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: black;
+            background: radial-gradient(circle, rgba(206, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-size: 100px;
+            opacity: 0.35;
+        }
+
+        hr {
+            margin-top: -50px;
+            opacity: 0.45;
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: 500;
+        }   
+
+        .about {
+            position: absolute;
+            top: 50%;
+            left: 2.5%;
+            width: calc(100% - 55%);
+            transform: translateY(-50%);
+        }
+        .bajji{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 35%;
+            filter: drop-shadow(0px 0px 35px orange);
+            animation: zoom 1.5s infinite ease;
+        }
+        @keyframes zoom {
+            0%{
+                filter: drop-shadow(0px 0px 35px orange);
+            }
+            25%{
+                filter: drop-shadow(0px 0px 45px orange);
+            }
+            50%{
+                filter: drop-shadow(0px 0px 65px orange);
+            }
+            75%{
+                filter: drop-shadow(0px 0px 45px orange);
+            }
+            100%{
+                filter: drop-shadow(0px 0px 35px orange);
+            }
+        }
+
+        nav{
+            position: absolute;
+            background: rgba(255, 255, 255, 0.25);
+            overflow: hidden;
+            width: 97.5%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid orange;
+            border-style: groove;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding-left: 25px;
+            height: 110px;
+            z-index: 2;
+            border-radius: 20px;
+        }
+        nav img{
+            width: 150px;
+        }
+        nav div{
+            position: absolute;
+            right: 1.5%;
+        }
+        nav a{
+            color: orange;
+            text-decoration: none;
+            font-size: 21px;
+            margin-left: 10px;
+            font-weight: 650;
+        }
+        nav a:hover{text-decoration:underline;}
+        footer{
+            position: absolute;
+            left: 1%;
+            bottom: 1.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/800px-Naruto_logo.svg.png" alt="">
+        <div>
+            <a href="http://" target="_blank" rel="noopener noreferrer">About</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Works</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Experience</a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">Contact</a>
+        </div>
+    </nav>
+    <div class="header">
+        <div class="about">
+            <h1>I am Naruto</h1>
+            <hr>
+            <p>Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village.</p>
+        </div>
+        <img src="bg.png" class="bajji">
+    </div>
+    <footer>Developed and maintaigned by Navaneet</footer>
+</body>
+
+</html>
